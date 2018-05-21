@@ -25,13 +25,16 @@ public:
 	}
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
-	FName ItemID;
+	int ItemID;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	FText Name;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
-	int slot;
+	FText Description;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	int Slot;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	int Value;
@@ -39,8 +42,7 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	UTexture2D* Thumbnail;
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite)
-	FText Description;
+
 
 	bool operator==(const FInventoryItem& Item) const
 	{
