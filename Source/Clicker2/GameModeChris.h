@@ -34,6 +34,9 @@ public:
 	FText Description;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	int Count;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	int Slot;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
