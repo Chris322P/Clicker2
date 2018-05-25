@@ -2,9 +2,10 @@
 
 #pragma once
 
-#include "CoreMinimal.h"
+#include "itemSlot.h"
 #include "includes/InfInt.h"
 #include "Engine/DataTable.h"
+#include "CoreMinimal.h"
 #include "GameFramework/GameModeBase.h"
 #include "GameModeChris.generated.h"
 
@@ -57,21 +58,15 @@ public:
 
 };
 
-
 UCLASS()
 class CLICKER2_API AGameModeChris : public AGameModeBase
 {
 	GENERATED_BODY()
 	
 public:
-	UFUNCTION(BlueprintCallable)
-	class UDataTable* GetItemDB() const { return ItemDB; }
 
 private:
 	InfInt money;
-
-	UPROPERTY(EditDefaultsOnly)
-		class UDataTable* ItemDB;
 
 	UFUNCTION(BlueprintCallable)
 		void AddMoney(FString _money);
