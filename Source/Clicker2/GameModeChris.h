@@ -2,7 +2,6 @@
 
 #pragma once
 
-#include "itemSlot.h"
 #include "includes/InfInt.h"
 #include "Engine/DataTable.h"
 #include "CoreMinimal.h"
